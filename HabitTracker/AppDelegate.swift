@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  HabitTracker
-//
-//  Created by Arthur Silva on 29/08/24.
-//
-
 import UIKit
 
 @main
