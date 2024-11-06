@@ -1,16 +1,9 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-//    private lazy var gradientView: UIView = {
-//        let view = UIView()
-//        view.translatesAutoresizingMaskIntoConstraints = false
-//
-//        return view
-//    }()
     
     override func loadView() {
         super.loadView()
-//        view = gradientView
     }
     
     override func viewDidLoad() {
@@ -21,14 +14,6 @@ class HomeViewController: UIViewController {
         gradientLayer.locations = [0.45, 70.0]
         gradientLayer.frame = view.bounds
         view.layer.insertSublayer(gradientLayer, at: 0)
-//        view.addSubview(gradientView)
-//        
-//        NSLayoutConstraint.activate([
-//            gradientView.topAnchor.constraint(equalTo: view.topAnchor),
-//            gradientView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-//            gradientView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-//            gradientView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-//        ])
         
     }
 

@@ -15,6 +15,7 @@
 		E43B18DE2C80E7EA00F25D5B /* HabitTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43B18DD2C80E7EA00F25D5B /* HabitTrackerTests.swift */; };
 		E43B18E82C80E7EC00F25D5B /* HabitTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43B18E72C80E7EC00F25D5B /* HabitTrackerUITests.swift */; };
 		E43B18EA2C80E7EC00F25D5B /* HabitTrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43B18E92C80E7EC00F25D5B /* HabitTrackerUITestsLaunchTests.swift */; };
+		E45F04492CD1666000894B1D /* RandomEmojiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F04482CD1666000894B1D /* RandomEmojiView.swift */; };
 		E4A8179D2C8B966600059862 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A8179C2C8B966600059862 /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,7 @@
 		E43B18E32C80E7EB00F25D5B /* HabitTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HabitTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E43B18E72C80E7EC00F25D5B /* HabitTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTrackerUITests.swift; sourceTree = "<group>"; };
 		E43B18E92C80E7EC00F25D5B /* HabitTrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E45F04482CD1666000894B1D /* RandomEmojiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomEmojiView.swift; sourceTree = "<group>"; };
 		E4A8179C2C8B966600059862 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,6 +108,7 @@
 				E43B18CF2C80E7E700F25D5B /* Assets.xcassets */,
 				E43B18D12C80E7E700F25D5B /* LaunchScreen.storyboard */,
 				E43B18D42C80E7E700F25D5B /* Info.plist */,
+				E45F04482CD1666000894B1D /* RandomEmojiView.swift */,
 			);
 			path = HabitTracker;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E45F04492CD1666000894B1D /* RandomEmojiView.swift in Sources */,
 				E43B18CB2C80E7D600F25D5B /* HomeViewController.swift in Sources */,
 				E4A8179D2C8B966600059862 /* TabBarController.swift in Sources */,
 				E43B18C72C80E7D600F25D5B /* AppDelegate.swift in Sources */,
