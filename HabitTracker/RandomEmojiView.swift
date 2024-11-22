@@ -8,6 +8,8 @@ class EmojiView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupView()
+        
+        addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(changeEmoji)))
     }
     
     required init?(coder: NSCoder) {
@@ -16,12 +18,26 @@ class EmojiView: UIView {
     }
     
     private func setupView() {
-        let randomIndex = Int.random(in: 0..<emojiList.count)
-        emojiLabel.text = emojiList[randomIndex]
+        emojiLabel.text = getRandomEmoji()
         emojiLabel.textAlignment = .center
         emojiLabel.font = UIFont.systemFont(ofSize: 50)
         
         addSubview(emojiLabel)
-        emojiLabel.frame = bounds
+        
+        emojiLabel.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            emojiLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
+            emojiLabel.centerYAnchor.constraint(equalTo: centerYAnchor),
+        ])
+    }
+
+    @objc
+    private func changeEmoji() {
+        emojiLabel.text = getRandomEmoji()
+    }
+    
+    private func getRandomEmoji() -> String {
+        let randomIndex = Int.random(in: 0..<emojiList.count)
+        return emojiList[randomIndex]
     }
 }
