@@ -7,13 +7,14 @@ class HomeViewController: UIViewController {
     }
     
     private let 😀 = EmojiView()
+    private let checkItemView = CheckItemView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupGradientBackGround()
-        
         setupEmojiView()
+//        setupCheckItemView()
     }
 
     private func setupGradientBackGround() {
@@ -29,5 +30,9 @@ class HomeViewController: UIViewController {
         view.addSubview(😀)
     }
 
+    private func setupCheckItemView() {
+        checkItemView.frame = CGRect(x: 100, y: 100, width: 40, height: 40)
+        view.addSubview(checkItemView)
+    }
 }
 

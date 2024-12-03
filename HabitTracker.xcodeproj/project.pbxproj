@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E4078B222CFF487000AAD46C /* CheckItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4078B212CFF487000AAD46C /* CheckItemView.swift */; };
 		E43B18C72C80E7D600F25D5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43B18C62C80E7D600F25D5B /* AppDelegate.swift */; };
 		E43B18C92C80E7D600F25D5B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43B18C82C80E7D600F25D5B /* SceneDelegate.swift */; };
 		E43B18CB2C80E7D600F25D5B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43B18CA2C80E7D600F25D5B /* HomeViewController.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E4078B212CFF487000AAD46C /* CheckItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckItemView.swift; sourceTree = "<group>"; };
 		E43B18C32C80E7D600F25D5B /* HabitTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HabitTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E43B18C62C80E7D600F25D5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E43B18C82C80E7D600F25D5B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				E43B18D12C80E7E700F25D5B /* LaunchScreen.storyboard */,
 				E43B18D42C80E7E700F25D5B /* Info.plist */,
 				E45F04482CD1666000894B1D /* RandomEmojiView.swift */,
+				E4078B212CFF487000AAD46C /* CheckItemView.swift */,
 			);
 			path = HabitTracker;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4078B222CFF487000AAD46C /* CheckItemView.swift in Sources */,
 				E45F04492CD1666000894B1D /* RandomEmojiView.swift in Sources */,
 				E43B18CB2C80E7D600F25D5B /* HomeViewController.swift in Sources */,
 				E4A8179D2C8B966600059862 /* TabBarController.swift in Sources */,
