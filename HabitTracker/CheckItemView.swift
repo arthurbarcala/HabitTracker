@@ -2,6 +2,8 @@ import Foundation
 import UIKit
 
 final class CheckItemView: UIView {
+    var isChecked = true
+    weak var delegate: CheckItemViewDelegate?
     
     lazy var backgroundView: UIView = {
         let view = UIView()
@@ -14,8 +16,7 @@ final class CheckItemView: UIView {
     }()
     
     lazy var checkButton: UIButton = {
-        let image = UIImage(systemName: "checkmark")!
-        let button = UIButton.systemButton(with: image, target: self, action: #selector(didTappedChangeState))
+        let button = UIButton.systemButton(with: UIImage(), target: self, action: #selector(didTappedChangeState))
         button.translatesAutoresizingMaskIntoConstraints = false
         button.tintColor = .green
         return button
@@ -52,6 +53,14 @@ final class CheckItemView: UIView {
     
     @objc
     private func didTappedChangeState() {
-        print("changeState")
+        if isChecked {
+            checkButton.setImage(nil, for: .normal)
+            isChecked = false
+        } else {
+            checkButton.setImage(UIImage(systemName: "checkmark"), for: .normal)
+            isChecked = true
+        }
+        
+        delegate?.didTapCheckItemView()
     }
 }
