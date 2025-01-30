@@ -22,6 +22,7 @@ class HomeViewController: UIViewController, UITableViewDelegate {
         return tableView
     }()
     private var titleLabel = UILabel()
+    private var addTaskButton = UIButton()
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
@@ -39,6 +40,7 @@ class HomeViewController: UIViewController, UITableViewDelegate {
         setupTitle()
         setupEmojiView()
         setupTableView()
+        setupAddButton()
     }
     
     private func setupTitle() {
@@ -80,7 +82,22 @@ class HomeViewController: UIViewController, UITableViewDelegate {
         
     }
     
-
+    private func setupAddButton() {
+        addTaskButton.setTitle("+", for: .normal)
+        addTaskButton.titleLabel?.font = UIFont.systemFont(ofSize: 24)
+        addTaskButton.backgroundColor = .clear
+        addTaskButton.layer.borderColor = UIColor.white.cgColor
+        addTaskButton.layer.borderWidth = 2
+        addTaskButton.layer.cornerRadius = 35
+        self.view.addSubview(addTaskButton)
+        addTaskButton.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            addTaskButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -20),
+            addTaskButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            addTaskButton.widthAnchor.constraint(equalToConstant: 70),
+            addTaskButton.heightAnchor.constraint(equalToConstant: 70)
+        ])
+    }
 }
 
 extension HomeViewController: UITableViewDataSource {
