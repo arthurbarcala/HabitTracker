@@ -1,12 +1,6 @@
 import UIKit
 import Foundation
 
-struct ItemModel {
-    let check: Bool
-    let text: String
-    let points: Int
-}
-
 protocol CheckItemViewDelegate: AnyObject {
     func didTapCheckItemView()
 }

@@ -8,13 +8,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = scene as? UIWindowScene else { return }
-//        let navigationController = UINavigationController()
-//        coordinator = MainCoordinator(navigationController: navigationController)
-//        coordinator?.start()
         window = UIWindow(frame: .zero)
         window?.makeKeyAndVisible()
-        window?.rootViewController = TabBarController(viewControllers: [HomeViewController()])
+        window?.rootViewController = TabBarController(viewControllers: [HomeFactory.make()])
         window?.windowScene = windowScene
+        UserDefaultManager.shared.cleanAll()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

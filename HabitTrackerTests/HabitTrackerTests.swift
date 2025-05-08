@@ -1,10 +1,3 @@
-//
-//  HabitTrackerTests.swift
-//  HabitTrackerTests
-//
-//  Created by Arthur Silva on 29/08/24.
-//
-
 import XCTest
 @testable import HabitTracker
 
